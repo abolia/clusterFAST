@@ -6,6 +6,7 @@ ClusterFAST is a tool for finding translocation in next generation sequencing da
 ClusterFAST is a pipeline for highly specific detection of translocations from high-coverage targeted capture sequence data.  It detects translocation breakpoints with single base accuracy and provides assembled contigs for PCR validation.  ClustFAST is implemented in Java for improved interoperability and can be run from the command line via a perl script.  ClusterFAST is meant for translocation detection from specific targeted regions and requires a picard-style interval file containing the targets (e.g., ALK_MLL.txt).  Numerous output files are created during the workflow (see below) to allow for error checking.
 
 WORKFLOW:
+
 1) First pass through ClusterFAST program identifies read pairs involving ALK or MLL.	(output: breakpoints.1.txt)
 
 2) Divide in half split and unmapped reads whose partners map to ALK or MLL; remap using novoalign.
@@ -28,14 +29,23 @@ The current configuration perl script assumes that ClusterFAST is being run on a
 
 perl run_cf.pl -b file.bam -o outdir -f ref.fa -t translocation_region_file.txt -i ref.novoindex  -n node -p port -m1 2 -m2 1 -r 0
 
-where:
--b is the input sequence file in sorted BAM format
--o is the output file directory
--f is the reference sequence in FASTA format (example hg19)
--t is the transloction partner_file (example ALK_MLL.txt)
--i is the binary novoalign indexed reference file
+where: 
+-b is the input sequence file in sorted BAM format 
+
+-o is the output file directory 
+
+-f is the reference sequence in FASTA format (example hg19) 
+
+-t is the transloction partner_file (example ALK_MLL.txt) 
+
+-i is the binary novoalign indexed reference file 
+
 -n server node where blat server is running
+
 -p port on which blast server is running
+
 -m1 is number of discordant pairs required
+
 -m2 is number of split reads required
+
 -r remove temp file (T/F)
