@@ -1,9 +1,9 @@
 clusterFAST
 ===========
 
-ClusterFAST is a tool for finding translocation in next generation sequencing data devloped by Haley Abel, PhD and Eric Duncavage, MD at Washinton University in St. Louis, MO.  A manuscript detailing the use of ClusterFAST is currently under review.  For question 
+ClusterFAST is a tool for finding translocation in next generation sequencing data devloped by Haley Abel, PhD and Eric Duncavage, MD at Washinton University in St. Louis, MO.  A manuscript detailing the use of ClusterFAST is currently under review.  For questions or comments please email habel@dsgmail.wustl.edu or eduncavage@path.wustl.edu
 
-ClusterFAST is a pipeline for highly specific detection of translocations from high-coverage targeted capture sequence data.  It detects translocation breakpoints with single base accuracy and provides assembled contigs for PCR validation.  ClustFAST is implemented in Java for improved interoperability and can be run from the command line via a perl script.  ClusterFAST is meant for translocation detection from specific targeted regions and requires a picard-style interval file containing the targets (e.g., ALK_MLL.txt).  
+ClusterFAST is a pipeline for highly specific detection of translocations from high-coverage targeted capture sequence data.  It detects translocation breakpoints with single base accuracy and provides assembled contigs for PCR validation.  ClustFAST is implemented in Java for improved interoperability and can be run from the command line via a perl script.  ClusterFAST is meant for translocation detection from specific targeted regions and requires a picard-style interval file containing the targets (e.g., ALK_MLL.txt).  Numerous output files are created during the workflow (see below) to allow for error checking.
 
 WORKFLOW:
 1) First pass through ClusterFAST program identifies read pairs involving ALK or MLL.	(output: breakpoints.1.txt)
