@@ -15,16 +15,16 @@ $minct2=1;
 $dist=50000;
 $rmtmp=1;
 
-
+##need to add links to below software
 #my $FASTA="/srv/cgs/data/gtac/hg19/hg19.fa";
-my $SAMTOOLS="/srv/cgs/local/samtools/latest/bin/samtools";
-my $NOVOALIGN="/srv/cgs/local/novocraft/latest/novoalign";
-my $PHRAP="/srv/cgs/local/phrap/latest/phrap";
-my $PINDEL="/srv/cgs/local/pindel/latest/bin/pindel";
-my $SAM2PINDEL="/home/comp/gtac/duncavage/sam2pindel";
-my $VELVET="/home/comp/gtac/habel/bin/velvet/velvet_1.2.07";
-my $FASTX="/srv/cgs/local/fastx/latest/bin";
-my $BLAT="/srv/cgs/local/blat/latest";
+my $SAMTOOLS=##INSERT PATH TO SAMTOOLS;
+my $NOVOALIGN=##INSERT PATH TO NOVOALIGN;
+my $PHRAP=##INSERT PATH TO PHRAP;
+my $PINDEL=##INSERT PATH TO PINDEL;
+my $SAM2PINDEL=##INSERT PATH TO SAM2PINDEL;
+my $VELVET=##INSERT PATH TO VELVET;
+my $FASTX=##INSERT PATH TO FASTX TOOLKIT;
+my $BLAT=##INSET PATH TO BLAST;
 
 #my $scriptspath="/home/comp/gtac/habel/bin/FindTrans/scripts0604";
 #my $cffile="/home/comp/gtac/habel/bin/FindTrans/cf0520/cf.jar";
