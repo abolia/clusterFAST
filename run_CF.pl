@@ -8,23 +8,19 @@ use Pod::Usage;
 
 my ($inbam, $outdir, $targets, $minct1, $minct2, $dist, $node, $port, $novoindex, $rmtmp, $FASTA);
 
-#$targets="/home/comp/gtac/habel/translocations/ALK_MLL.txt";
-#$novoindex="/srv/cgs/data/gtac/hg19.novoindex";
 $minct1=2;
 $minct2=1;
 $dist=50000;
 $rmtmp=1;
 
-##need to add links to below software
-#my $FASTA="/srv/cgs/data/gtac/hg19/hg19.fa";
-my $SAMTOOLS=##INSERT PATH TO SAMTOOLS;
-my $NOVOALIGN=##INSERT PATH TO NOVOALIGN;
-my $PHRAP=##INSERT PATH TO PHRAP;
-my $PINDEL=##INSERT PATH TO PINDEL;
-my $SAM2PINDEL=##INSERT PATH TO SAM2PINDEL;
-my $VELVET=##INSERT PATH TO VELVET;
-my $FASTX=##INSERT PATH TO FASTX TOOLKIT;
-my $BLAT=##INSET PATH TO BLAST;
+my $SAMTOOLS=##INSERT PATH TO SAMTOOLS; http://sourceforge.net/projects/samtools/files/samtools/
+my $NOVOALIGN=##INSERT PATH TO NOVOALIGN; http://www.novocraft.com/main/downloadpage.php
+my $PHRAP=##INSERT PATH TO PHRAP; http://www.phrap.org/consed/consed.html#howToGet
+my $PINDEL=##INSERT PATH TO PINDEL;http://gmt.genome.wustl.edu/pindel/current/
+my $SAM2PINDEL=##INSERT PATH TO SAM2PINDEL;http://gmt.genome.wustl.edu/pindel/current/
+my $VELVET=##INSERT PATH TO VELVET;http://www.molecularevolution.org/software/genomics/velvet
+my $FASTX=##INSERT PATH TO FASTX TOOLKIT; http://hannonlab.cshl.edu/fastx_toolkit/download.html
+my $BLAT=##INSET PATH TO BLAST; http://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download
 
 #my $scriptspath="/home/comp/gtac/habel/bin/FindTrans/scripts0604";
 #my $cffile="/home/comp/gtac/habel/bin/FindTrans/cf0520/cf.jar";
