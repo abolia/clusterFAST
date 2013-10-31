@@ -27,6 +27,8 @@ Running ClusterFAST:
 The current configuration perl script assumes that ClusterFAST is being run on a multi-node cluster.  A blat server must be running before invoking clusterFAST.  This can typically be done by:
 ./gfServer start [node] [port] [reference.2bit]
 
+File paths to other sofware packages must be specified in the run_cf.pl script before running.
+
 perl run_cf.pl -b file.bam -o outdir -f ref.fa -t translocation_region_file.txt -i ref.novoindex  -n node -p port -m1 2 -m2 1 -r 0
 
 where: 
